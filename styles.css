@@ -1,0 +1,187 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, h1, h2, h3, h4, div, ul, p, pre {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 32px;
+  margin: 15px 0 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+pre {
+  font-family: monospace;
+  white-space: pre;
+}
+
+p, pre {
+  padding-bottom: 10px;
+}
+
+li {
+  list-style-position: inside;
+}
+
+table#game {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+tr, img {
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  height: 30px;
+  line-height: 0.5em;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+}
+
+tr:first-child td {
+  border-width: 0 1px 0 0;
+}
+
+tr td:last-child {
+  border-width: 1px 0 0 0;
+}
+
+tr:first-child td:last-child {
+  border-width: 0;
+}
+
+#hud {
+  text-align: center;
+}
+
+#messages {
+  color: red;
+  height: 24px;
+  text-align: center;
+}
+
+#indicators {
+  margin-top: 8px;
+}
+
+.indicator {
+  margin: 0 10px;
+}
+
+#instructions, #messages {
+  margin: 0 auto;
+  width: 600px;
+}
+
+#footer {
+  border: 1px dotted lightGray;
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* action button images */
+
+#actions input {
+  background-color: #E6E6E6;
+  background-position: 5px 1px;
+  background-repeat: no-repeat;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0 1px 1px 0;
+  padding-left: 26px;
+}
+
+#actions input:hover {
+  background-color: #EEEEEE;
+}
+
+#teleportButton.safe {
+  background-image: url("images/teleporter-safe-16px.png");
+}
+#teleportButton.unsafe {
+  background-image: url("images/teleporter-16px.png");
+}
+
+#bombButton {
+  background-image: url("images/bomb-16px.png");
+}
+
+#restartButton {
+  background-image: url("images/restart-16px.png");
+}
+
+#waitButton {
+  background-image: url("images/wait-16px.png");
+}
+
+/* directional arrows */
+.hint {
+  background-color: #EEEEEE;
+  background-image: url("images/arrows-small.png");
+}
+
+.hint.ul {
+  background-position: 0;
+}
+
+.hint.um {
+  background-position: 210px;
+}
+
+.hint.ur {
+  background-position: 180px;
+}
+
+.hint.ml {
+  background-position: 150px;
+}
+
+.hint.mm {
+  background-image: none;
+}
+
+.hint.mr {
+  background-position: 120px;
+}
+
+.hint.ll {
+  background-position: 90px;
+}
+
+.hint.lm {
+  background-position: 60px;
+}
+
+.hint.lr {
+  background-position: 30px;
+}
+
+.hint.goDir {
+  background-color: #E3E3E3;
+}
+
+.dead {
+  background-color: #FF6536;
+}
